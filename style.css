@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  :root{
+    --cor1: #2D727C;
+    --cor2:#5FA2AC;
+    --cor3:#62DFAB;
+    --cor4:#252B2C;
+    --cor5:#ffff;
+  }
+  
+  @font-face {
+    font-family: 'Humanist777';
+    src: url(/tipografia/Humanist\ 777\ Black\ BT.ttf)format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Humanisti521BT';
+    src: url(/tipografia/Humanist521BT.ttf)format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Humanisti521LBT';
+    src: url(/tipografia/Humanist521LightBT.ttf)format('opentype');
+  }
+  
+  :root{
+    --font-black: "Humanist777";
+    --font-bt: "Humanisti521BT";
+    --font-lbt:"Humanisti521LBT";  
+  }
+  
+
+ /* .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+  
+ .container-bg::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(./imagem/fundoweb.jpeg) ;
+    height: 1100px;
+    max-width: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+  } 
+
+  .contato{
+    font-family: var(--font-black);
+    color:rgb(41, 41, 165);  
+    text-shadow: 0.1em 0.1em 0.1em rgba(255, 255, 255, 0.74) ;
+    margin-top: 600px;
+    margin-left: 850px;
+    font-size: 1.8rem;
+    -webkit-text-stroke: 0.3px #ffffff;
+    display: block;
+    padding-left: 50px;
+  }
+  
+  .contact{
+    width: 450px;
+    height: auto;
+    display: block;
+    flex-direction: column;
+    
+  }
+  
+  #whats {
+    border-radius: 10px;
+    background-color: black;
+    font-family: var(--font-bt);
+    color:var(--cor5);
+    font-weight:lighter; 
+    width: 450px;
+    height: 70px; 
+  }
+  
+  #whats a {
+    color:var(--cor5);
+    text-decoration: none;
+    font-size: 2.5rem;
+  }
+  
+  .icone-whats{
+    width: 40px;
+    height: 40px;
+    text-align: end;
+  }
+
+    /*tablet */ 
+@media (min-width: 768px) and (max-width: 1024px){  
+
+    .container-bg::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url(./imagem/fundotablet.jpeg) ;
+        height: 1100px;
+        max-width: 1000px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 10px;
+        z-index: -1;
+    }  
+
+    .contato {
+        width: 150px;
+        margin-top: 850px;
+        margin-left: 400px;
+    }
+    
+    .contact{
+        width: 400px;
+        font-size: 1.6rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #whats {
+        width: 350px;
+        height: auto;
+        padding: 10px;
+        margin-left: 10%;
+    }
+    
+    #whats a{
+        font-size: 1.8rem;
+        }
+    }  
+
+/*celular 
+@media (min-width: 350px) and (max-width: 850px) {
+    .container-bg::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url(./imagem/fundocel.jpeg) ;
+        height: 750px;
+        max-width: 850px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        z-index: -1;
+    }  
+
+    .contato {
+        width: 60%;
+        margin-top: 550px;
+        margin-left: 90px;
+    }
+
+    .contact{
+        width: 80%;
+        height: auto;
+        font-size: 1rem;
+        margin-top: 5%;
+        margin-left: 12%;   
+    }
+
+    #whats {
+        width: 100%;
+        height: auto;
+        margin-left: 10%;
+    }
+
+    #whats a{
+        font-size: 1.6rem;
+    }
+    } 
